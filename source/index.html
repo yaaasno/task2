@@ -8,23 +8,44 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-     <nav class="main-nav">
+     <header class="main-nav">
       <div class="container main-nav__container">
         <a href="" class="main-nav__logo">
           <img src="img/slick.svg" alt="Логотип магазина Slick">
         </a>
 
-        <ul class="main-nav__ul">
-          <li class="main-nav__li">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__li">
-            <a>Магазин</a>
-          </li>
-          <li class="main-nav__li">
-            <a>Контакты</a>
-          </li>
-        </ul>
+        <nav class="main-nav__menu main-nav__ul--showed">
+          <button class="main-nav__btn-close">
+            <img src="img/close.svg" alt="Закрытие меню">
+          </button>
+          <ul class="main-nav__ul">
+            <li class="main-nav__li">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__li">
+              <a>Магазин</a>
+            </li>
+            <li class="main-nav__li">
+              <a>Контакты</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__div-social">
+            <p>Следи за нами в социальных сетях:</p>
+            <ul class="main-nav__ul-social">
+              <li class="main-nav__li-social">
+                <a href="https://t.me/telegram">
+                  <img src="img/telegram.svg" alt="telegram">
+                </a>
+              </li>
+              <li class="main-nav__li-social">
+                <a href="https://vk.com/feed">
+                  <img src="img/vk.svg" alt="vk">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <div class="main-nav__div-shop">
           <button class="main-nav__btn">
@@ -32,6 +53,7 @@
           </button>
           <button class="main-nav__btn main-nav__btn-shop">
             <img src="img/shop.svg" alt="Корзина" class="main-nav__img">
+            <span class="main-nav__pin">0</span>
           </button>
         </div>
 
@@ -39,10 +61,7 @@
           <img src="img/burger.svg" alt="Иконка меню">
         </button>
 
-        <button class="main-nav__btn-close">
-          <img src="img/close.svg" alt="Закрытие меню">
-        </button>
       </div>
-     </nav>
+    </header>
   </body>
 </html>
