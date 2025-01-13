@@ -1,0 +1,36 @@
+.title-line {
+
+  &::after,
+  &::before {
+    content: '';
+    background-color: #000000;
+    width: 41px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 22px;
+  }
+}
+
+.trend__today.title-line::after {
+  display: none;
+}
+.trend__today.title-line::before {
+  width: 47px;
+  margin: 0 22px 0 0;
+}
+
+.footer__lenght.title-line::before {
+  display: none;
+}
+.footer__lenght.title-line::after {
+  position: absolute;
+  width: 18px;
+  height: 1px;
+  transform: translate(19px, 22px) rotate(90deg);
+  left: 50%;
+
+  @media (min-width: 768px) {
+    transform: translate(85px, 22px) rotate(90deg);
+  }
+}

@@ -1,0 +1,68 @@
+.black-button {
+  width: 38px;
+  height: 38px;
+  background-color: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+
+  @media(min-width: 768px) {
+    width: 65px;
+    height: 65px;
+  }
+
+  @media(min-width: 1728px) {
+    width: 118px;
+    height: 118px;
+  }
+
+  img {
+    width: 13px;
+    height: 13px;
+
+    @media(min-width: 768px) {
+      width: 23px;
+      height: 23px;
+    }
+
+    @media(min-width: 1728px) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__tap-other {
+    @media(min-width: 768px) {
+      width: 38px;
+      height: 38px;
+
+      img {
+        width: 13px;
+        height: 13px;
+
+        @media(min-width: 1728px) {
+          width: 21px;
+          height: 21px;
+        }
+      }
+    }
+
+    @media(min-width: 1728px) {
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  &-trend {
+    @media(min-width: 768px) {
+      height: 40px;
+      width: 40px;
+    }
+
+    img {
+      @media(min-width: 768px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

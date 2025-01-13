@@ -1,4 +1,6 @@
 .card {
+  border: 2px solid #dedede;
+  border-radius: 25px;
 
   .card__smalmain,
   .card__price {
@@ -111,47 +113,31 @@
   &__tap {
     @include clear-button;
 
-    width: 38px;
-    height: 38px;
-    background-color: #000000;
-    border-radius: 100%;
     transform: translate(47px, -3px);
-    cursor: pointer;
 
     @media(min-width: 768px) {
       transform: translateX(300px);
-      width: 65px;
-      height: 65px;
     }
 
     @media(min-width: 1728px) {
-      width: 118px;
-      height: 118px;
       margin-left: 475px;
       transform: translateY(-78px);
     }
-
-    img {
-      width: 13px;
-      height: 13px;
-
-      @media(min-width: 768px) {
-        width: 23px;
-        height: 23px;
-      }
-
-      @media(min-width: 1728px) {
-        width: 43px;
-        height: 43px;
-      }
-    }
   }
 
-  &__tap-other {
+  .card__tap-other {
     @media(min-width: 768px) {
       transform: translateX(85px);
       width: 38px;
       height: 38px;
+    }
+
+    @media(min-width: 1728px) {
+      margin-left: 210px;
+      transform: translate(-15px, -30px);
+      width: 58px;
+      height: 58px;
+    }
 
       img {
         width: 13px;
@@ -162,13 +148,13 @@
           height: 21px;
         }
       }
-    }
+  }
 
-    @media(min-width: 1728px) {
-      width: 58px;
-      height: 58px;
-      margin-left: 210px;
-      transform: translate(-15px, -30px);
+  &__trend {
+    width: 300px;
+
+    @media(min-width: 768px) {
+      width: 309px;
     }
   }
 }

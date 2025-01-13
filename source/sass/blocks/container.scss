@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .container {
   padding-right: 10px;
   padding-left: 10px;
@@ -10,27 +14,6 @@
   @media (min-width: 1728px) {
     padding-right: 84px;
     padding-left: 84px;
-  }
-
-  .cap__container {
-    @media (min-width: 1728px) {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .main-nav__container {
-    display: flex;
-    align-items: center;
-    padding-top: 14px;
-
-    @media (min-width: 767px) {
-      padding-top: 21px;
-    }
-
-    @media (min-width: 1727px) {
-      padding-top: 77px;
-    }
   }
 
 }

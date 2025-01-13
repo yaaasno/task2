@@ -1,5 +1,15 @@
 .cap {
-  margin-bottom: 100px;
+
+  @media (min-width: 1728px) {
+    margin-bottom: 19px;
+  }
+
+  &__container {
+    @media (min-width: 1728px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__title {
     margin-bottom: 54px;

@@ -1,0 +1,72 @@
+.magazine {
+  background-color: #000;
+  margin-bottom: 57px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 93px;
+  }
+
+  @keyframes circle-to-square {
+    from {
+      transform: translateX(10%);
+    }
+    to {
+      transform: translateX(-45%);
+    }
+  }
+
+  &__list {
+    @include clear-list;
+
+    display: flex;
+    align-items: center;
+
+    // animation-name: circle-to-square;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+    @media (min-width: 1728px) {
+      animation: none;
+    }
+  }
+
+  &__item {
+    padding: 23px 20px 23px 10px;
+
+    @media (min-width: 768px) {
+      padding: 45px 86px;
+    }
+
+    .magazine__ozon {
+      width: 72px;
+      height: 16px;
+
+      @media (min-width: 768px) {
+        width: 181px;
+        height: 40px;
+      }
+    }
+
+    .magazine__wildberies {
+      width: 106px;
+      height: 16px;
+
+      @media (min-width: 768px) {
+        width: 266px;
+        height: 40px;
+      }
+    }
+
+    .magazine__market {
+      width: 119px;
+      height: 16px;
+
+      @media (min-width: 768px) {
+        width: 208px;
+        height: 40px;
+      }
+    }
+  }
+}

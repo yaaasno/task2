@@ -1,0 +1,209 @@
+.trend {
+  margin-bottom: 49px;
+
+  &__container {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    @media (min-width: 1728px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__first {
+    text-transform: capitalize;
+
+    @media (min-width: 768px) {
+      padding-top: 19px;
+      width: 50%;
+      margin-right: 35px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-right: 157px;
+      width: auto;
+    }
+  }
+
+  &__today {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  &__popular {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 54px;
+    color: #000;
+    min-width: 277px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      width: 277px;
+    }
+  }
+
+  &__look {
+    min-width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 34px;
+    color: rgb(#000, 0.75);
+
+    @media (min-width: 768px) {
+      width: 300px;
+      margin-bottom: 27px;
+    }
+  }
+
+  &__top-button {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 43px;
+      padding: 17px 50px;
+      box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41px 33px rgba(0, 0, 0, 0.05), 0 22px 17px rgba(0, 0, 0, 0.04), 0 12px 10px rgba(0, 0, 0, 0.03), 0 6px 5px rgba(0, 0, 0, 0.02), 0 2px 2px rgba(0, 0, 0, 0.01);
+    }
+  }
+
+  &__choice {
+    margin-bottom: 30px;
+  }
+
+  &__second {
+    @include clear-list;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1728px) {
+      gap: 0 67px;
+    }
+  }
+
+  &__second--arrow::before {
+    background: url(../img/left-arrow.svg) no-repeat;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 27px;
+    transform: translate(-178px, 166px);
+
+    @media (min-width: 1728px) {
+      transform: translate(-571px, 166px);
+    }
+  }
+
+  &__second--arrow::after {
+    background: url(../img/right-arrow.svg) no-repeat;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 27px;
+    transform: translate(178px, 166px);
+
+    @media (min-width: 1728px) {
+      transform: translate(571px, 166px);
+    }
+  }
+
+  &__item {
+    background-color: rgb(#d9d9d9, 0.15);
+
+    .trend__image {
+      background: url(../img/trend-black.png) no-repeat;
+      width: 300px;
+      height: 190px;
+      background-size: 90%;
+      background-position: center -35px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    .trend__image-gray {
+      @media (min-width: 1728px) {
+        background: url(../img/trend-gray.png) no-repeat;
+        background-position: center 21%;
+      }
+    }
+
+    .trend__image-blue {
+      @media (min-width: 1728px) {
+        background: url(../img/trend-blue.png) no-repeat;
+        background-position: center 21%;
+      }
+    }
+  }
+
+  &__item-other {
+    display: none;
+
+    @media (min-width: 1728px) {
+      display: inline;
+    }
+  }
+
+  &__sport {
+    display: flex;
+    padding-left: 36px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 22px;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    padding-left: 36px;
+  }
+
+  &__button {
+    transform: translateX(112px);
+    margin-bottom: 35px;
+  }
+
+  &__scroll {
+    @include clear-button;
+
+    background: url(../img/slider-black.png) no-repeat;
+    width: 100%;
+    height: 11px;
+    background-position: center center;
+  }
+
+  &__show {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 12px 43px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.07), 0 41px 33px rgba(0, 0, 0, 0.05), 0 22px 17px rgba(0, 0, 0, 0.04), 0 12px 10px rgba(0, 0, 0, 0.03), 0 6px 5px rgba(0, 0, 0, 0.02), 0 2px 2px rgba(0, 0, 0, 0.01);
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1728px) {
+      display: none !important;
+    }
+  }
+
+}

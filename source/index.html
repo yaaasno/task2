@@ -14,7 +14,7 @@
           <img src="img/slick.svg" alt="Логотип магазина Slick">
         </a>
 
-        <nav class="main-nav__menu main-nav__menu--showed">
+        <nav class="main-nav__menu">
           <button class="main-nav__closed">
             <img src="img/close.svg" alt="Закрытие меню">
           </button>
@@ -75,25 +75,120 @@
             <p class="cap__text">Какой-то супер-мотивирующий текст чтоб купили прям вообще всё</p>
           </div>
           <div class="cap__sentr">
-            <button class="cap__purchases button">За покупками</button>
+            <button type="button" class="cap__purchases button">За покупками</button>
           </div>
         </div>
 
         <div class="cap__product cap__product--ultimate">
-          <img src="img/main-product.png" alt="Главный продукт">
+          <img src="img/main-product.webp" alt="Главный продукт">
           <span class="cap__product-trend">Trendy Slick Pro</span>
           <span class="cap__product-price">3999 р</span>
         </div>
       </div>
     </section>
 
+    <!-- <section class="magazine">
+      <div class="container magazine__container">
+        <ul class="magazine__list">
+          <li class="magazine__item">
+            <img src="img/ozon.png" alt="озон" class="magazine__ozon">
+          </li>
+          <li class="magazine__item">
+            <img src="img/wildberries.png" alt="вайлдберис" class="magazine__wildberies">
+          </li>
+          <li class="magazine__item">
+            <img src="img/sbermarket.png" alt="сбер маркет" class="magazine__market">
+          </li>
+          <li class="magazine__item">
+            <img src="img/yandex.png" alt="яндекс маркет" class="magazine__market">
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <section class="trend">
+      <div class="container trend__container">
+
+        <div class="trend__first">
+          <h2 class="trend__today title-line">Сегодня в тренде</h2>
+          <h3 class="trend__popular">Самые популярные</h3>
+          <p class="trend__look">Посмотрите, что чаще всего покупают у нас</p>
+          <button type="button" class="trend__top-button button">Показать все</button>
+        </div>
+
+        <div class="trend__choice">
+          <ul class="trend__second trend__second--arrow">
+            <li class="trend__item card card-trend">
+              <div class="trend__image"></div>
+              <span class="trend__sport">Running sport shoe</span>
+              <span class="trend__price">3999 Р</span>
+              <button type="button" class="trend__button black-button black-button-trend">
+                <img src="img/Arrow.svg" alt="cтрелка ссылка">
+              </button>
+            </li>
+            <li class="trend__item trend__item-other card card-trend">
+              <div class="trend__image trend__image-gray"></div>
+              <span class="trend__sport">Running sport shoe</span>
+              <span class="trend__price">3999 Р</span>
+              <button type="button" class="trend__button black-button black-button-trend">
+                <img src="img/Arrow.svg" alt="cтрелка ссылка">
+              </button>
+            </li>
+            <li class="trend__item trend__item-other card card-trend">
+              <div class="trend__image trend__image-blue"></div>
+              <span class="trend__sport">Running sport shoe</span>
+              <span class="trend__price">3999 Р</span>
+              <button type="button" class="trend__button black-button black-button-trend">
+                <img src="img/Arrow.svg" alt="cтрелка ссылка">
+              </button>
+            </li>
+          </ul>
+          <button class="trend__scroll"></button>
+        </div>
+
+        <button type="button" class="trend__show button">Показать все</button>
+      </div>
+    </section>
+
+    <div class="basket">
+      <div class="basket__flex">
+        <p class="basket__text">Товар успешно добавлен в корзину</p>
+        <img src="img/close.svg" alt="закрыть" class="basket__close">
+      </div>
+      <button class="basket__tap button">Продолжить покупки</button>
+    </div>
+
+    <section class="banner">
+      <div class="container banner__container">
+        <h3 class="banner__ready">Ты готов <br> проложить свой путь?</h3>
+        <button type="button" class="banner__all button">См все</button>
+
+        <div class="banner__trio">
+          <ul class="banner__flex banner__flex--vector">
+            <li class="banner__item">
+              <img src="img/banner-white.webp" alt="кроссовки" class="banner__shoes-white">
+            </li>
+            <li class="banner__item">
+              <img src="img/banner-blue.png" alt="кроссовки" class="banner__shoes-other">
+            </li>
+            <li class="banner__item">
+              <img src="img/banner-pink.png" alt="кроссовки" class="banner__shoes-other">
+            </li>
+          </ul>
+          <button class="banner__scroll"></button>
+        </div>
+        <div class="banner__foot"></div>
+        <div class="banner__back-slick"></div>
+      </div>
+    </section>
+
     <section class="best-sell">
       <div class="container best-sell__container">
-        <h2 class="best-sell__head">Best Selling</h2>
+        <h2 class="best-sell__head title-line">Best Selling</h2>
 
         <div class="best-sell__floor">
-          <button class="best-sell__male button">Мужские</button>
-          <button class="best-sell__female button button--transparent">Женские</button>
+          <button type="button" class="best-sell__male button">Мужские</button>
+          <button type="button" class="best-sell__female button button--transparent">Женские</button>
         </div>
 
         <div class="best-sell__option">
@@ -104,7 +199,7 @@
               <div class="card__flex">
                 <span class="card__price">2999 Р</span>
                 <span class="card__old-price">4999 Р</span>
-                <button class="card__tap">
+                <button class="card__tap black-button">
                   <img src="img/Arrow.svg" alt="cтрелка ссылка">
                 </button>
               </div>
@@ -116,7 +211,7 @@
               <div class="card__flex card__flex--bottom">
                 <span class="card__price card__down">2999 Р</span>
                 <span class="card__old-price card__old-price-delete">3999 Р</span>
-                <button class="card__tap card__tap-other">
+                <button class="card__tap card__tap-other black-button">
                   <img src="img/Arrow.svg" alt="cтрелка ссылка">
                 </button>
               </div>
@@ -128,17 +223,82 @@
               <div class="card__flex best-sell__flex--bottom">
                 <span class="card__price card__down">2999 Р</span>
                 <span class="card__old-price card__old-price-delete">3999 Р</span>
-                <button class="card__tap card__tap-other">
+                <button class="card__tap card__tap-other black-button">
                   <img src="img/Arrow.svg" alt="cтрелка ссылка">
                 </button>
               </div>
             </li>
           </ul>
 
-          <button class="best-sell__teal button">Показать Все</button>
+          <button type="button" class="best-sell__teal button">Показать Все</button>
         </div>
-
       </div>
     </section>
+
+    <section class="feedback">
+      <div class="container feedback__container">
+        <h2 class="feedback__main title-line">Отзывы <span>о кроссах</span></h2>
+
+        <ul class="feedback__people">
+          <li class="feedback__name card">
+            <div class="feedback__top">
+              <div class="feedback__image-ava img"></div>
+              <h3 class="feedback__human feedback__human--five-star">Ava Joshi</h3>
+            </div>
+            <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+
+          <li class="feedback__name card">
+            <div class="feedback__top">
+              <div class="feedback__image-otis img"></div>
+              <h3 class="feedback__human feedback__human--four-star">Otis Bisnoy</h3>
+            </div>
+            <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <img src="img/Slick-footer.png" alt="лого" class="footer__slick-white">
+            <p class="footer__cool">Какие мы крутые, у нас лучшие кроссы и ваще... всё.</p>
+            <div class="footer__social">
+              <img src="img/telegram-white.svg" alt="соц сеть" class="footer__list-tg">
+              <img src="img/vk-white.svg" alt="соц сеть" class="footer__list-vk">
+            </div>
+          </li>
+
+          <li class="footer__item">
+            <form action="#" class="footer__form">
+              <label for="email" class="footer__action">Подпишись на наши акции</label>
+              <div class="footer__lenght title-line">
+                <input type="email" id="email" placeholder="Введи Email..." class="footer__enter">
+                <button type="button" class="footer__follow button">Подписаться</button>
+              </div>
+            </form>
+              <p class="footer__reserv footer__reserv--line">www.slick.com©all right reserve</p>
+          </li>
+
+          <li class="footer__item">
+            <ul class="footer__list-bottom">Быстрые ссылки
+              <li class="footer__item-bottom">
+                <a href="">Главная</a>
+              </li>
+              <li class="footer__item-bottom">
+                <a href="">Магазины</a>
+              </li>
+              <li class="footer__item-bottom">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
